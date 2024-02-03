@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
   },
   item_text: {
     color: '#9b4521', 
-    fontSize: 50
+    fontSize: 50,
+    fontFamily: 'MerriweatherBoldItalic',
   },
 });
