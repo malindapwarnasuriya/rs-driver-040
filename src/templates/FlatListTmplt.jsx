@@ -1,9 +1,9 @@
-import { FlatList, StyleSheet, Text, View } from 'react-native';
+import { FlatList, StyleSheet, View } from 'react-native';
 import React from 'react';
 import FlatListItemTmplt from '../components/data/FlatListItemTmplt';
 
 const FlatListTmplt = () => {
-  const data = [...Array(24)].map((val, index)=>(index+1));
+  const data = [...Array(30)].map((val, index)=>(index+1));
 
   return (
     <View style={styles.container}>
