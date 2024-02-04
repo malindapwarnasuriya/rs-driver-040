@@ -2,10 +2,11 @@ import { Text, View, TouchableOpacity } from 'react-native';
 import React from 'react';
 import { Link, Stack } from 'expo-router';
 import styles from '../../../styles/styles';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Reset = () => {
   return (
-    <View style={styles.full_container}>
+    <SafeAreaView style={{flex: 1}}>
       <Stack.Screen options={{title: 'Reset'}}/>
       <View style={styles.header_container}>
         <Link href={'/'} asChild>
@@ -17,7 +18,7 @@ const Reset = () => {
       <View style={styles.container}>
         <Text>Reset</Text>
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 

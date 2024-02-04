@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View, SafeAreaView, TouchableOpacity } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from 'react';
 import { Stack, router } from 'expo-router';
 import { FontAwesome5, Octicons } from '@expo/vector-icons';
@@ -26,7 +27,7 @@ const steps = [
   },
 ];
 
-const FirstPage = () => {
+const Landing = () => {
   const [index, setIndex] = useState(0);
   const [data, setData] = useState(steps[index]);
 
@@ -87,11 +88,12 @@ const FirstPage = () => {
           <Text style={localStyles.button_text}>Continue</Text>
         </TouchableOpacity>
       </View>
+      <StatusBar style="light" />
     </SafeAreaView>
   );
 }
 
-export default FirstPage;
+export default Landing;
 
 const localStyles = StyleSheet.create({
   container: {

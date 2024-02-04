@@ -3,12 +3,13 @@ import React from 'react';
 import ListItemTmplt from './segments/ListItemTmplt';
 import { Link, Stack } from 'expo-router';
 import styles from '../../styles/styles';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const PassengerList = () => {
   const data = [...Array(30)].map((val, index)=>(index+1));
 
   return (
-    <View style={styles.full_container}>
+    <SafeAreaView style={{flex: 1}}>
       <Stack.Screen options={{title: 'Passenger List'}}/>
       <View style={styles.header_container}>
         <Link href={'/'} asChild>
@@ -26,7 +27,7 @@ const PassengerList = () => {
           renderItem={({item})=><ListItemTmplt item={item}/>}
         />
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 
