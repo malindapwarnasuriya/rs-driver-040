@@ -1,5 +1,7 @@
+import 'react-native-gesture-handler';
 import React, { useEffect } from 'react';
 import { Stack } from 'expo-router';
+import { GestureHandlerRootView  } from 'react-native-gesture-handler';
 import { useFonts, Merriweather_700Bold, Merriweather_400Regular, Merriweather_400Regular_Italic, Merriweather_700Bold_Italic } from '@expo-google-fonts/merriweather';
 import { Inter_900Black } from '@expo-google-fonts/inter';
 import * as SplashScreen from 'expo-splash-screen';
@@ -25,7 +27,9 @@ const RootLayout = () => {
   };
 
   return (
-    <Stack initialRouteName='Home' screenOptions={{headerShown: true}}></Stack>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <Stack initialRouteName='Home' screenOptions={{headerShown: true}}></Stack>
+    </GestureHandlerRootView >
   );
 }
 

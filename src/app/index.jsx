@@ -29,8 +29,13 @@ export default function Home() {
             <Text style={styles.link_text}>Passengers</Text>
           </TouchableOpacity>
         </Link>
+        <Link href={'/landing/firstPage'} asChild>
+          <TouchableOpacity style={styles.link}>
+            <Text style={styles.link_text}>Landing</Text>
+          </TouchableOpacity>
+        </Link>
       </View>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
     </View>
   );
 }

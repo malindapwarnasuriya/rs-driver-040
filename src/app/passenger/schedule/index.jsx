@@ -19,8 +19,5 @@ const localStyles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  },  
-  list_item_column: {
-    gap: 10,
   },
 });
